@@ -54,8 +54,8 @@ section {
     box-shadow: var(--shadow);
 }
 
-/* Botones */
-button {
+/* Botones reutilizables */
+.btn {
     padding: 12px 20px;
     border: none;
     border-radius: 8px;
@@ -65,36 +65,33 @@ button {
     transition: 0.3s;
 }
 
-/* Botón primario */
-button:first-of-type {
+.btn-primary {
     background-color: var(--color-primary);
     color: white;
 }
 
-button:first-of-type:hover,
-button:first-of-type:focus {
+.btn-primary:hover,
+.btn-primary:focus {
     background-color: #5B21B6;
 }
 
-/* Botón secundario */
-button:nth-of-type(2) {
+.btn-secondary {
     background-color: var(--color-secondary);
     color: white;
 }
 
-button:nth-of-type(2):hover,
-button:nth-of-type(2):focus {
+.btn-secondary:hover,
+.btn-secondary:focus {
     background-color: #115E59;
 }
 
-/* Botón peligro */
-button:nth-of-type(3) {
+.btn-danger {
     background-color: var(--color-danger);
     color: white;
 }
 
-button:nth-of-type(3):hover,
-button:nth-of-type(3):focus {
+.btn-danger:hover,
+.btn-danger:focus {
     background-color: #991B1B;
 }
 
@@ -128,8 +125,8 @@ article {
     box-shadow: var(--shadow);
 }
 
-/* Badges */
-span {
+/* Badges reutilizables */
+.badge {
     display: inline-block;
     padding: 8px 14px;
     border-radius: 20px;
@@ -139,15 +136,15 @@ span {
     font-weight: 600;
 }
 
-span:first-of-type {
+.badge-high {
     background-color: var(--color-danger);
 }
 
-span:nth-of-type(2) {
+.badge-medium {
     background-color: var(--color-warning);
 }
 
-span:last-of-type {
+.badge-low {
     background-color: var(--color-success);
 }
 
