@@ -1,9 +1,16 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
+
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
     <title>Tickets Registrados</title>
+
+    <link rel="stylesheet" href="css/ui-kit.css">
+    <link rel="stylesheet" href="css/tickets.css">
+
 </head>
 
 
@@ -12,35 +19,39 @@
 
 <header>
 
-<h1>Data Center HelpDesk</h1>
-<p>Consulta de tickets registrados</p>
+    <h1>DataCenter HelpDesk</h1>
+
+    <p>
+        Consulta de tickets registrados
+    </p>
 
 </header>
 
 
+
 <nav>
 
-<ul>
+    <ul>
 
-<li>
-<a href="index.html">
-Inicio
-</a>
-</li>
+        <li>
+            <a href="index.html">
+                Inicio
+            </a>
+        </li>
 
-<li>
-<a href="reportar.html">
-Reportar Incidente
-</a>
-</li>
+        <li>
+            <a href="reportar.html">
+                Reportar Incidente
+            </a>
+        </li>
 
-<li>
-<a href="tickets.html">
-Tickets
-</a>
-</li>
+        <li>
+            <a href="tickets.html">
+                Tickets
+            </a>
+        </li>
 
-</ul>
+    </ul>
 
 </nav>
 
@@ -51,72 +62,127 @@ Tickets
 
 <section>
 
-<h2>Listado de tickets</h2>
+    <h2>
+        Listado de tickets
+    </h2>
 
 
-<article>
+    <article class="card">
 
 
-<table border="1">
-
-<thead>
-
-<tr>
-
-<th>ID</th>
-<th>Título</th>
-<th>Categoría</th>
-<th>Prioridad</th>
-<th>Estado</th>
-
-</tr>
-
-</thead>
+        <div class="table-container">
 
 
-<tbody>
+            <table>
 
 
-<tr>
+                <thead>
 
-<td>001</td>
-<td>Fallo de conexión</td>
-<td>Red</td>
-<td>Alta</td>
-<td>Pendiente</td>
+                    <tr>
 
-</tr>
+                        <th>ID</th>
+                        <th>Título</th>
+                        <th>Categoría</th>
+                        <th>Prioridad</th>
+                        <th>Estado</th>
 
+                    </tr>
 
-<tr>
-
-<td>002</td>
-<td>Equipo lento</td>
-<td>Hardware</td>
-<td>Media</td>
-<td>En revisión</td>
-
-</tr>
+                </thead>
 
 
-<tr>
 
-<td>003</td>
-<td>Error del sistema</td>
-<td>Software</td>
-<td>Baja</td>
-<td>Resuelto</td>
-
-</tr>
+                <tbody>
 
 
-</tbody>
+                    <tr>
+
+                        <td>001</td>
+
+                        <td>
+                            Fallo de conexión
+                        </td>
+
+                        <td>
+                            Red
+                        </td>
+
+                        <td>
+                            <span class="badge badge-high">
+                                Alta
+                            </span>
+                        </td>
+
+                        <td>
+                            Pendiente
+                        </td>
+
+                    </tr>
 
 
-</table>
+
+                    <tr>
+
+                        <td>002</td>
+
+                        <td>
+                            Equipo lento
+                        </td>
+
+                        <td>
+                            Hardware
+                        </td>
+
+                        <td>
+                            <span class="badge badge-medium">
+                                Media
+                            </span>
+                        </td>
+
+                        <td>
+                            En revisión
+                        </td>
+
+                    </tr>
 
 
-</article>
+
+
+                    <tr>
+
+                        <td>003</td>
+
+                        <td>
+                            Error del sistema
+                        </td>
+
+                        <td>
+                            Software
+                        </td>
+
+                        <td>
+                            <span class="badge badge-low">
+                                Baja
+                            </span>
+                        </td>
+
+                        <td>
+                            Resuelto
+                        </td>
+
+                    </tr>
+
+
+                </tbody>
+
+
+            </table>
+
+
+        </div>
+
+
+    </article>
 
 
 </section>
@@ -137,4 +203,5 @@ Tickets
 
 
 </body>
+
 </html>

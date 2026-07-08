@@ -1,0 +1,180 @@
+/* Importación de tipografía */
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap');
+
+
+/* Variables del Design System */
+:root {
+
+    --color-primary: #6D28D9;
+    --color-secondary: #0F766E;
+
+    --color-success: #16A34A;
+    --color-danger: #DC2626;
+    --color-warning: #D97706;
+
+    --color-background: #F5F3FF;
+    --color-surface: #FFFFFF;
+    --color-text: #1F2937;
+
+    --border-radius: 12px;
+
+    --shadow:
+    0 4px 12px rgba(0,0,0,0.12);
+}
+
+/* Configuración general */
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Inter', sans-serif;
+    background-color: var(--color-background);
+    color: var(--color-text);
+    margin: 0;
+    padding: 30px;
+}
+
+/* Encabezado */
+header {
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+header h1 {
+    color: var(--color-primary);
+}
+
+/* Secciones */
+section {
+    background-color: var(--color-surface);
+    padding: 25px;
+    margin-bottom: 25px;
+    border-radius: var(--border-radius);
+    box-shadow: var(--shadow);
+}
+
+/* Botones reutilizables */
+.btn {
+    padding: 12px 20px;
+    border: none;
+    border-radius: 8px;
+    margin: 8px;
+    cursor: pointer;
+    font-weight: 600;
+    transition: 0.3s;
+}
+
+.btn-primary {
+    background-color: var(--color-primary);
+    color: white;
+}
+
+.btn-primary:hover,
+.btn-primary:focus {
+    background-color: #5B21B6;
+}
+
+.btn-secondary {
+    background-color: var(--color-secondary);
+    color: white;
+}
+
+.btn-secondary:hover,
+.btn-secondary:focus {
+    background-color: #115E59;
+}
+
+.btn-danger {
+    background-color: var(--color-danger);
+    color: white;
+}
+
+.btn-danger:hover,
+.btn-danger:focus {
+    background-color: #991B1B;
+}
+
+/* Formularios */
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+input,
+select {
+    padding: 12px;
+    border: 1px solid #CBD5E1;
+    border-radius: 8px;
+    font-size: 15px;
+}
+
+input:focus,
+select:focus {
+    outline: none;
+    border-color: var(--color-primary);
+    box-shadow: 0 0 8px rgba(109,40,217,0.35);
+}
+
+/* Card de ticket */
+article {
+    background-color: white;
+    padding: 20px;
+    border-radius: var(--border-radius);
+    box-shadow: var(--shadow);
+}
+
+/* Badges reutilizables */
+.badge {
+    display: inline-block;
+    padding: 8px 14px;
+    border-radius: 20px;
+    color: white;
+    margin-right: 10px;
+    font-size: 14px;
+    font-weight: 600;
+}
+
+.badge-high {
+    background-color: var(--color-danger);
+}
+.badge-medium {
+    background-color: var(--color-warning);
+}
+.badge-low {
+    background-color: var(--color-success);
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    margin-top: 30px;
+}
+
+/* Tablas */
+.table-container {
+    width: 100%;
+    overflow-x: auto;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+th {
+    background-color: var(--color-primary);
+    color: white;
+    padding: 12px;
+    text-align: left;
+}
+
+td {
+    padding: 12px;
+    border-bottom: 1px solid #E5E7EB;
+}
+
+tr:hover {
+    background-color: #F3F4F6;
+}
