@@ -1,32 +1,4 @@
 /* Layout general del Dashboard */
-/* Navegación */
-nav {
-    display: flex;
-    justify-content: center;
-    margin-bottom: 30px;
-}
-
-nav ul {
-    display: flex;
-    gap: 25px;
-    list-style: none;
-    padding: 15px;
-    margin: 0;
-    background-color: var(--color-surface);
-    border-radius: var(--border-radius);
-    box-shadow: var(--shadow);
-}
-
-nav a {
-    text-decoration: none;
-    color: var(--color-text);
-    font-weight: 500;
-}
-
-nav a:hover {
-    color: var(--color-primary);
-}
-
 /* Dashboard */
 .dashboard-grid {
     display: grid;
@@ -44,4 +16,33 @@ nav a:hover {
 
 .dashboard-card h3 {
     color: var(--color-primary);
+}
+
+/* Diseño adaptable para dispositivos móviles */
+@media (max-width: 768px) {
+    body {
+        padding: 15px;
+    }
+
+    /* Navegación móvil */
+    nav ul {
+        flex-direction: column;
+        width: 100%;
+        text-align: center;
+        gap: 15px;
+    }
+
+    nav {
+        width: 100%;
+    }
+
+    /* Dashboard */
+    .dashboard-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .dashboard-card {
+        width: 100%;
+    }
+
 }

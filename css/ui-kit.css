@@ -96,10 +96,10 @@ section {
 }
 
 /* Formularios */
-form {
+.form-container {
     display: flex;
     flex-direction: column;
-    gap: 12px;
+    gap: 15px;
 }
 
 input,
@@ -118,11 +118,11 @@ select:focus {
 }
 
 /* Card de ticket */
-article {
-    background-color: white;
-    padding: 20px;
-    border-radius: var(--border-radius);
-    box-shadow: var(--shadow);
+.card {
+    background-color: var(--color-surface);
+    padding:20px;
+    border-radius:var(--border-radius);
+    box-shadow:var(--shadow);
 }
 
 /* Badges reutilizables */
@@ -177,4 +177,53 @@ td {
 
 tr:hover {
     background-color: #F3F4F6;
+}
+
+nav {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 30px;
+}
+
+nav ul {
+    display: flex;
+    gap: 25px;
+    list-style: none;
+    padding: 15px;
+    margin: 0;
+    background-color: var(--color-surface);
+    border-radius: var(--border-radius);
+    box-shadow: var(--shadow);
+}
+
+nav a {
+    text-decoration: none;
+    color: var(--color-text);
+    font-weight: 500;
+}
+
+nav a:hover {
+    color: var(--color-primary);
+}
+
+/* Responsive Navigation */
+@media (max-width: 768px) {
+
+    nav ul {
+        flex-direction: column;
+        width: 100%;
+        align-items: center;
+        gap: 15px;
+    }
+
+    nav li {
+        width: 100%;
+        text-align: center;
+    }
+
+    nav a {
+        display: block;
+        width: 100%;
+    }
+
 }

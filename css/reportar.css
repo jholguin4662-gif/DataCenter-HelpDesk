@@ -1,0 +1,44 @@
+/* Adaptación del formulario */
+textarea {
+    width: 100%;
+    resize: vertical;
+}
+
+@media (max-width: 768px) {
+    .form-container {
+        width: 100%;
+    }
+
+    .card {
+        width: 100%;
+    }
+}
+
+/* Estilos específicos del formulario */
+textarea {
+    width:100%;
+}
+
+@media (max-width:768px){
+    main {
+        width:100%;
+    }
+
+    section {
+        padding:15px;
+    }
+
+    .form-container {
+        width:100%;
+    }
+
+    .card {
+        width:100%;
+    }
+
+    input,
+    select,
+    textarea {
+        width:100%;
+    }
+}

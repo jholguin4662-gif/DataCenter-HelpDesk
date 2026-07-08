@@ -1,0 +1,29 @@
+/* Adaptación de tabla */
+@media (max-width: 768px) {
+    table {
+        font-size: 14px;
+    }
+
+    th,
+    td {
+        padding: 8px;
+    }
+}
+
+/* Estilos específicos de tickets */
+.table-container {
+    width:100%;
+    overflow-x:auto;
+}
+
+@media (max-width:768px){
+    table {
+        min-width:600px;
+    }
+
+    th,
+    td {
+        padding:8px;
+        font-size:14px;
+    }
+}

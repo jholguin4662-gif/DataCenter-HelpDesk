@@ -33,18 +33,19 @@
     <h2>Formulario de reporte</h2>
 
 
-    <form>
+    <form class="form-container">
 
-        <article>
+        <article class="card">
 
             <label for="titulo">
                 Título del incidente:
             </label>
             <br>
 
-            <input 
-                type="text" 
-                id="titulo" 
+            <input
+                class="form-control"
+                type="text"
+                id="titulo"
                 name="titulo"
                 placeholder="Ingrese el título del problema"
             >
@@ -52,14 +53,17 @@
         </article>
 
 
-        <article>
+        <article class="card">
 
             <label for="categoria">
                 Categoría:
             </label>
             <br>
 
-            <select id="categoria" name="categoria">
+            <select
+                class="form-control"
+                id="categoria"
+                name="categoria">
 
                 <option value="red">
                     Red
@@ -78,7 +82,7 @@
         </article>
 
 
-        <article>
+        <article class="card">
 
             <p>Nivel de prioridad:</p>
 
@@ -117,30 +121,30 @@
         </article>
 
 
-        <article>
+        <article class="card">
 
             <label for="descripcion">
                 Descripción detallada:
             </label>
             <br>
 
-            <textarea 
+            <textarea
+                class="form-control"
                 id="descripcion"
                 name="descripcion"
                 rows="6"
-                cols="40"
                 placeholder="Describa el incidente..."
             ></textarea>
 
         </article>
 
 
-        <button class="btn btn-primary" type="submit">
+        <button class="btn btn-primary">
             Enviar reporte
         </button>
 
 
-    </form>
+    </form> 
 
 </section>
 
