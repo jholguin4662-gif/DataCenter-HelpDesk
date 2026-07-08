@@ -1,0 +1,47 @@
+/* Layout general del Dashboard */
+/* Navegación */
+nav {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 30px;
+}
+
+nav ul {
+    display: flex;
+    gap: 25px;
+    list-style: none;
+    padding: 15px;
+    margin: 0;
+    background-color: var(--color-surface);
+    border-radius: var(--border-radius);
+    box-shadow: var(--shadow);
+}
+
+nav a {
+    text-decoration: none;
+    color: var(--color-text);
+    font-weight: 500;
+}
+
+nav a:hover {
+    color: var(--color-primary);
+}
+
+/* Dashboard */
+.dashboard-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 25px;
+}
+
+.dashboard-card {
+    background-color: var(--color-surface);
+    padding: 25px;
+    border-radius: var(--border-radius);
+    box-shadow: var(--shadow);
+    text-align: center;
+}
+
+.dashboard-card h3 {
+    color: var(--color-primary);
+}
